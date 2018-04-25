@@ -1,0 +1,52 @@
+// sdsd.idl : ActiveX 控件项目的类型库源。
+
+// 此文件将由 MIDL 编译器工具处理以
+// 产生类型库(sdsd.tlb)，该类型库将成为
+// sdsd.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(A04F3CFF-A7A9-4945-82FA-5CCE4B19291F), version(1.0),
+  helpfile("sdsd.hlp"),
+  helpstring("sdsd ActiveX 控件模块"),
+  control ]
+library sdsdLib
+{
+	importlib(STDOLE_TLB);
+
+	//  CsdsdCtrl 的主调度接口
+
+	[ uuid(60B9A45C-6DF5-43BD-A463-28673BC91CC1),
+	  helpstring("sdsd Control 的调度接口")]
+	dispinterface _Dsdsd
+	{
+		properties:
+		methods:
+
+			[id(DISPID_ABOUTBOX)] void AboutBox();
+	};
+
+	//  CsdsdCtrl 的事件调度接口
+
+	[ uuid(91638E1F-8CCA-4701-AA4A-F3F3545B417F),
+	  helpstring("sdsd Control 的事件接口") ]
+	dispinterface _DsdsdEvents
+	{
+		properties:
+			//  事件接口没有任何属性
+
+		methods:
+	};
+
+	//  CsdsdCtrl 的类信息
+
+	[ uuid(438DFC09-4DC1-4161-8BBC-9A806A53FD45),
+	  helpstring("sdsd Control"), control ]
+	coclass sdsd
+	{
+		[default] dispinterface _Dsdsd;
+		[default, source] dispinterface _DsdsdEvents;
+	};
+
+};

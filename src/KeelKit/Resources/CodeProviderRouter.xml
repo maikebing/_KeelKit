@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<LangCodeProvider xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CSharp>
+    <AsmFullName>System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</AsmFullName>
+    <TypeName>Microsoft.CSharp.CSharpCodeProvider</TypeName>
+  </CSharp>
+  <VBDotNet>
+    <AsmFullName>System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</AsmFullName>
+    <TypeName>Microsoft.VisualBasic.VBCodeProvider</TypeName>
+  </VBDotNet>
+  <IronPython>
+    <AsmFullName>IronPython, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</AsmFullName>
+    <Location>IronPython.dll</Location>
+    <TypeName>IronPython.CodeDom.PythonProvider</TypeName>
+  </IronPython>
+  <FSharp>
+    <AsmFullName>FSharp.Compiler.CodeDom, Version=1.9.6.2, Culture=neutral, PublicKeyToken=a19089b1c74d0809</AsmFullName>
+    <Location>FSharp.Compiler.CodeDom.dll</Location>
+    <TypeName>Microsoft.FSharp.Compiler.CodeDom.FSharpCodeProvider</TypeName>
+  </FSharp>
+  <CPP>
+    <AsmFullName>Microsoft.VisualC.VSCodeProvider, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</AsmFullName>
+    <TypeName>Microsoft.VisualC.VSCodeProvider</TypeName>
+  </CPP>
+</LangCodeProvider>

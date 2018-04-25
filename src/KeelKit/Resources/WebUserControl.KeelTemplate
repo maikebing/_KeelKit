@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<AscxDom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Footer>&lt;/table&gt;</Footer>
+  <Header>&lt;table style="width:100%;"&gt;</Header>
+  <Mapping_Decimal>&lt;tr&gt;&lt;td align="right"&gt;_desc_&lt;/td&gt;&lt;td&gt;&lt;asp:TextBox ID="_name_" runat="server" MaxLength="_lenght_"&gt;_defaultvalue_&lt;/asp:TextBox&gt;&lt;/td&gt;&lt;/tr&gt;</Mapping_Decimal>
+  <Mapping_String>&lt;tr&gt;&lt;td align="right"&gt;_desc_&lt;/td&gt;&lt;td&gt;&lt;asp:TextBox ID="_name_" runat="server" MaxLength="_lenght_"&gt;_defaultvalue_&lt;/asp:TextBox&gt;&lt;/td&gt;&lt;/tr&gt;</Mapping_String>
+  <Mapping_DateTime>&lt;tr&gt;&lt;td align="right"&gt;_desc_&lt;/td&gt;&lt;td&gt;&lt;asp:TextBox ID="_name_" runat="server" MaxLength="_lenght_"&gt;_defaultvalue_&lt;/asp:TextBox&gt;&lt;/td&gt;&lt;/tr&gt;</Mapping_DateTime>
+  <Mapping_Boolean>&lt;tr&gt;&lt;td colspan="2"&gt;&lt;asp:CheckBox ID="_name_" runat="server" Checked="_defaultvalue_" Text="_desc_"  style="width:100%;"/&gt;&lt;/td&gt;&lt;/tr&gt;</Mapping_Boolean>
+  <Mapping_Unknow>&lt;tr&gt;&lt;td align="right"&gt;_desc_&lt;/td&gt;&lt;td&gt;&lt;asp:TextBox ID="_name_" runat="server" MaxLength="_lenght_"&gt;_defaultvalue_&lt;/asp:TextBox&gt;&lt;/td&gt;&lt;/tr&gt;</Mapping_Unknow>
+</AscxDom>

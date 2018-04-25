@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharpDemo", "FSharpDemo\FSharpDemo.fsproj", "{655C429D-8EA7-4410-93DB-DDE37C9E452A}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharpModel", "FSharpModel\FSharpModel.fsproj", "{3935561D-00C1-4944-B5B4-85DA9DA9957E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{655C429D-8EA7-4410-93DB-DDE37C9E452A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{655C429D-8EA7-4410-93DB-DDE37C9E452A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{655C429D-8EA7-4410-93DB-DDE37C9E452A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{655C429D-8EA7-4410-93DB-DDE37C9E452A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3935561D-00C1-4944-B5B4-85DA9DA9957E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3935561D-00C1-4944-B5B4-85DA9DA9957E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3935561D-00C1-4944-B5B4-85DA9DA9957E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3935561D-00C1-4944-B5B4-85DA9DA9957E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+
+
+<SyntaxDefinition name = "Python" extensions = ".py">
+	
+	<Properties>
+		<Property name="LineComment" value="#"/>
+	</Properties>
+	
+	<Digits   name = "Digits"   bold = "false" italic = "false" color = "Black"/>
+  
+  	<RuleSets>
+		<RuleSet ignorecase = "false">
+
+			<Delimiters>&amp;&lt;&gt;~!@%^*()-+=|\#/{}[]:;"' ,	.?</Delimiters>
+		                
+		    <Span name = "STRING" bold = "false" italic = "false" color = "Gray" stopateol = "true">
+		        <Begin>"</Begin>
+		        <End>"</End>
+		    </Span>
+
+			<Span name = "STRING2" bold = "false" italic = "false" color = "Gray" stopateol = "true">
+				<Begin>'</Begin>
+				<End>'</End>
+			</Span>
+
+		
+		    <Span name = "LINECOMMENT" bold = "false" italic = "false" color = "Green" stopateol = "true">
+		        <Begin>#</Begin>
+		    </Span>
+
+			<MarkPrevious bold = "true" italic = "false" color = "MidnightBlue">(</MarkPrevious>
+						
+			<KeyWords name = "AccessKeywords" bold="true" italic="false" color="Black">
+				<Key word = "self" />
+				<Key word = ":" />
+			</KeyWords>
+			
+			<KeyWords name = "Punctuation" bold = "false" italic = "false" color = "DarkGreen">
+				<Key word = "," />
+				<Key word = "." />
+				<Key word = ";" />
+				<Key word = "(" />
+				<Key word = ")" />
+				<Key word = "[" />
+				<Key word = "]" />
+				<Key word = "{" />
+				<Key word = "}" />
+				<Key word = "+" />
+				<Key word = "-" />
+				<Key word = "/" />
+				<Key word = "%" />
+				<Key word = "*" />
+				<Key word = "&lt;" />
+				<Key word = "&gt;" />
+				<Key word = "^" />
+				<Key word = "=" />
+				<Key word = "~" />
+				<Key word = "!" />
+				<Key word = "|" />
+				<Key word = "&amp;" />
+			</KeyWords>
+			
+			<KeyWords name = "Statements" bold="false" italic="false" color="Blue">
+		        <Key word = "and" />
+		        <Key word = "assert" />
+		        <Key word = "break" />
+		        <Key word = "class" />
+		        <Key word = "continue" />
+		        <Key word = "def" />
+		        <Key word = "del" />
+				<Key word = "while" />
+		        <Key word = "elif" />
+		        <Key word = "else" />
+		        <Key word = "exec" />
+		        <Key word = "finally" />
+		        <Key word = "for" />
+		        <Key word = "from" />
+		        <Key word = "global" />
+		        <Key word = "if" />
+		        <Key word = "import" />
+		        <Key word = "in" />
+		        <Key word = "is" />
+		        <Key word = "lambda" />
+		        <Key word = "not" />
+		        <Key word = "or" />
+		        <Key word = "pass" />
+		        <Key word = "print" />
+		        <Key word = "raise" />
+		        <Key word = "return" />
+		        <Key word = "try" />
+				<Key word = "except" />
+		        <Key word = "while" />
+		        <Key word = "yield" />
+				<Key word = "raise" />
+				<Key word = "True" />
+				<Key word = "False" />
+			</KeyWords>
+			
+			<KeyWords name = "Functions" bold="false" italic="false" color="Navy">
+				<Key word = "readline" />
+				<Key word = "capitalize" />
+				<Key word = "id" />
+				<Key word = "match" />
+				<Key word = "search" />
+				<Key word = "clear" />
+				<Key word = "filter" />
+				<Key word = "getattr" />
+				<Key word = "delattr" />
+		        <Key word = "exec" />
+		        <Key word = "eval" />
+		        <Key word = "dir" />
+		        <Key word = "help" />
+		        <Key word = "argv" />
+		        <Key word = "stderr" />
+		        <Key word = "stdin" />
+		        <Key word = "stdout" />
+		        <Key word = "complex" />
+		        <Key word = "len" />
+		        <Key word = "dict" />
+		        <Key word = "file" />
+		        <Key word = "map" />
+		        <Key word = "zip" />
+		        <Key word = "str" />
+		        <Key word = "int" />
+		        <Key word = "raw_input" />
+		        <Key word = "open" />
+		        <Key word = "oct" />
+		        <Key word = "range" />
+		        <Key word = "reduce" />
+		        <Key word = "reload" />
+		        <Key word = "repr" />
+		        <Key word = "reversed" />
+		        <Key word = "round" />
+		        <Key word = "setattr" />
+		        <Key word = "sum" />
+		        <Key word = "tuple" />
+		        <Key word = "type" />
+		        <Key word = "unicode" />
+		        <Key word = "xrange" />
+		        <Key word = "enumerate" />
+		        <Key word = "divmod" />
+		        <Key word = "frozenset" />
+		        <Key word = "hash" />
+		        <Key word = "super" />
+		        <Key word = "__doc__" />
+		        <Key word = "__name__" />
+				<Key word = "__init__" />
+		        <Key word = "abs" />
+		        <Key word = "apply" />
+		        <Key word = "buffer" />
+		        <Key word = "chr" />
+		        <Key word = "classmethod" />
+		        <Key word = "cmp" />
+		        <Key word = "compile" />
+		        <Key word = "LoadAssemblyByName" />
+		        <Key word = "LoadAssemblyFromFile" />
+		        <Key word = "close" />
+		        <Key word = "read" />
+		        <Key word = "write" />
+		        <Key word = "replace" />
+		        <Key word = "exit" />
+				<Key word = "has_key" />
+				<Key word = "items" />
+				<Key word = "keys" />
+				<Key word = "pop" />
+				<Key word = "setdefault" />
+				<Key word = "values" />
+				<Key word = "append" />
+				<Key word = "count" />
+				<Key word = "extend" />
+				<Key word = "insert" />
+				<Key word = "remove" />
+				<Key word = "find" />
+				<Key word = "join" />
+				<Key word = "lower" />
+				<Key word = "split" />
+				<Key word = "upper" />
+				<Key word = "sleep" />
+				<Key word = "gettime" />
+				<Key word = "path" />
+				<Key word = "compile" />
+				<Key word = "random" />
+				<Key word = "escape" />
+				<Key word = "getfilesystemencoding" />
+				<Key word = "__getitem__" />
+				<Key word = "__len__" />
+				<Key word = "__repr__" />
+				<Key word = "__eq__" />
+				<Key word = "__ne__" />
+				<Key word = "__new__" />
+				<Key word = "endswith" />
+				<Key word = "expandtabs" />
+				<Key word = "find" />
+				<Key word = "index" />
+				<Key word = "isdigit" />
+				<Key word = "startswith" />
+				<Key word = "strip" />
+				<Key word = "swapcase" />
+				<Key word = "__import__" />
+				<Key word = "basestring" />
+				<Key word = "abs" />
+				<Key word = "bool" />
+				<Key word = "callable" />
+				<Key word = "classmethod" />
+				<Key word = "complex" />
+				<Key word = "execfile" />
+				<Key word = "float" />
+				<Key word = "frozenset" />
+				<Key word = "globals" />
+				<Key word = "hasattr" />
+				<Key word = "hex" />
+				<Key word = "issubclass" />
+				<Key word = "iter" />
+				<Key word = "list" />
+				<Key word = "long" />
+				<Key word = "max" />
+				<Key word = "min" />
+				<Key word = "oct" />
+				<Key word = "ord" />
+				<Key word = "pow" />
+				<Key word = "property" />
+				<Key word = "reversed" />
+				<Key word = "set" />
+				<Key word = "get" />
+				<Key word = "slice" />
+				<Key word = "staticmethod" />
+				<Key word = "super" />
+				<Key word = "unichr" />
+				<Key word = "vars" />
+				<Key word = "xrange" />
+		
+			</KeyWords>
+	
+		</RuleSet>
+
+	</RuleSets>
+</SyntaxDefinition>

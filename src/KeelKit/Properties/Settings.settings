@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="KeelKit.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SCVAsm" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">KeelKit.SCV.SVN.DLL</Value>
+    </Setting>
+    <Setting Name="Path" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="srccnt" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=.;Initial Catalog=d;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="descnt" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=.;Initial Catalog=PMS;Integrated Security=True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

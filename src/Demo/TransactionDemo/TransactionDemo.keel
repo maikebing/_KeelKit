@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<KeelExt xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModelProjectName>TransactionDemo</ModelProjectName>
+  <ModelProjectKind>DotNetAndDotNet</ModelProjectKind>
+  <ModelGenerateMore>false</ModelGenerateMore>
+  <ModelAddMore>false</ModelAddMore>
+  <DataViews />
+  <DataTables>tb_user;</DataTables>
+  <FormForInherit>false</FormForInherit>
+  <ModelForUI>false</ModelForUI>
+  <ModelForCPath />
+  <DALProjectName>TransactionDemo</DALProjectName>
+  <UIProjectName>TransactionDemo</UIProjectName>
+  <UIAddForm>false</UIAddForm>
+  <UIModifyForm>false</UIModifyForm>
+  <UIQueryForm>false</UIQueryForm>
+  <UIPrinterForm>false</UIPrinterForm>
+  <ComponentProjectName>TransactionDemo</ComponentProjectName>
+  <DataSourceName>MicrosoftSqlServer</DataSourceName>
+  <ProviderName>System.Data.SqlClient</ProviderName>
+  <ConnectString>Data Source=.;Initial Catalog=berrycod;Persist Security Info=True;User ID=sa;Password=future</ConnectString>
+  <AutoVersion>
+    <Enable>false</Enable>
+    <RndBuildRev>false</RndBuildRev>
+    <OneVersion>false</OneVersion>
+    <major>1</major>
+    <minor>0</minor>
+    <build>0</build>
+    <revision>0</revision>
+    <buildVerType>Counter</buildVerType>
+    <revisionVerType>Counter</revisionVerType>
+  </AutoVersion>
+</KeelExt>

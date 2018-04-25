@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{50406691-E43E-4197-A0FE-41F1B3BC879B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MPF.Project.NonShipping</RootNamespace>
+    <AssemblyName>MPF.Project.NonShipping</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\Key.snk</AssemblyOriginatorKeyFile>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkSubset>
+    </TargetFrameworkSubset>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\BIN\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="EnvDTE80">
+      <HintPath>EnvDTE80.dll</HintPath>
+      <Name>EnvDTE80</Name>
+      <SpecificVersion>False</SpecificVersion>
+      <Aliases>global</Aliases>
+    </Reference>
+    <Reference Include="Microsoft.Build.Engine, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>Microsoft.Build.Engine.dll</HintPath>
+      <Name>Microsoft.Build.Engine</Name>
+      <SpecificVersion>Yes</SpecificVersion>
+      <Aliases>global</Aliases>
+    </Reference>
+    <Reference Include="Microsoft.Build.Framework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>Microsoft.Build.Framework.dll</HintPath>
+      <Name>Microsoft.Build.Framework</Name>
+      <SpecificVersion>Yes</SpecificVersion>
+      <Aliases>global</Aliases>
+    </Reference>
+    <Reference Include="Microsoft.Build.Utilities.v3.5, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>Microsoft.Build.Utilities.v3.5.dll</HintPath>
+      <Name>Microsoft.Build.Utilities.v3.5</Name>
+      <SpecificVersion>Yes</SpecificVersion>
+      <Aliases>global</Aliases>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.VSHelp, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Design" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Designer.Interfaces, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.OLE.Interop" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop.8.0" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop.9.0" />
+    <Reference Include="Microsoft.VisualStudio.TextManager.Interop" />
+    <Reference Include="Microsoft.VisualStudio.Shell.9.0" />
+    <Reference Include="VsLangProj" />
+    <Reference Include="VSLangProj80, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.CommonIDE, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.ProjectAggregator" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProjectBase\AssemblyReferenceNode.cs" />
+    <Compile Include="ProjectBase\Attributes.cs" />
+    <Compile Include="ProjectBase\BuildDependency.cs" />
+    <Compile Include="ProjectBase\BuildPropertyPage.cs" />
+    <Compile Include="ProjectBase\ComReferenceNode.cs" />
+    <Compile Include="ProjectBase\ConfigProvider.cs" />
+    <Compile Include="ProjectBase\ConfigurationProperties.cs" />
+    <Compile Include="ProjectBase\DataObject.cs" />
+    <Compile Include="ProjectBase\DependentFileNode.cs" />
+    <Compile Include="ProjectBase\DesignPropertyDescriptor.cs" />
+    <Compile Include="ProjectBase\DocumentManager.cs" />
+    <Compile Include="ProjectBase\DontShowAgainDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectBase\DontShowAgainDialog.designer.cs">
+      <DependentUpon>DontShowAgainDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectBase\EnumDependencies.cs" />
+    <Compile Include="ProjectBase\FileChangeManager.cs" />
+    <Compile Include="ProjectBase\FileDocumentManager.cs" />
+    <Compile Include="ProjectBase\FileNode.cs" />
+    <Compile Include="ProjectBase\FolderNode.cs" />
+    <Compile Include="ProjectBase\GlobalPropertyHandler.cs" />
+    <Compile Include="ProjectBase\GlobalSuppressions.cs" />
+    <Compile Include="ProjectBase\HierarchyNode.cs" />
+    <Compile Include="ProjectBase\IDEBuildLogger.cs" />
+    <Compile Include="ProjectBase\ImageHandler.cs" />
+    <Compile Include="ProjectBase\Interfaces.cs" />
+    <Compile Include="ProjectBase\LangProj\OAAssemblyReference.cs" />
+    <Compile Include="ProjectBase\LangProj\OABuildManager.cs" />
+    <Compile Include="ProjectBase\LangProj\OAComReference.cs" />
+    <Compile Include="ProjectBase\LangProj\OAProjectReference.cs" />
+    <Compile Include="ProjectBase\LangProj\OAReferenceBase.cs" />
+    <Compile Include="ProjectBase\LangProj\OAReferences.cs" />
+    <Compile Include="ProjectBase\LangProj\OAVSProject.cs" />
+    <Compile Include="ProjectBase\LangProj\OAVSProjectItem.cs" />
+    <Compile Include="ProjectBase\LocalizableProperties.cs" />
+    <Compile Include="ProjectBase\Microsoft.VisualStudio.Package.Project.cs" />
+    <Compile Include="ProjectBase\Misc\ConnectionPointContainer.cs" />
+    <Compile Include="ProjectBase\Misc\ExternDll.cs" />
+    <Compile Include="ProjectBase\Misc\NativeMethods.cs" />
+    <Compile Include="ProjectBase\Misc\UnsafeNativeMethods.cs" />
+    <Compile Include="ProjectBase\NestedProjectBuildDependency.cs" />
+    <Compile Include="ProjectBase\NestedProjectNode.cs" />
+    <Compile Include="ProjectBase\NodeProperties.cs" />
+    <Compile Include="ProjectBase\OAFileItem.cs" />
+    <Compile Include="ProjectBase\OAFolderItem.cs" />
+    <Compile Include="ProjectBase\OANavigableProjectItems.cs" />
+    <Compile Include="ProjectBase\OANestedProjectItem.cs" />
+    <Compile Include="ProjectBase\OANullProperty.cs" />
+    <Compile Include="ProjectBase\OAProject.cs" />
+    <Compile Include="ProjectBase\OAProjectItem.cs" />
+    <Compile Include="ProjectBase\OAProjectItems.cs" />
+    <Compile Include="ProjectBase\OAProperties.cs" />
+    <Compile Include="ProjectBase\OAProperty.cs" />
+    <Compile Include="ProjectBase\OAReferenceFolderItem.cs" />
+    <Compile Include="ProjectBase\OAReferenceItem.cs" />
+    <Compile Include="ProjectBase\OASolutionFolder.cs" />
+    <Compile Include="ProjectBase\OleServiceProvider.cs" />
+    <Compile Include="ProjectBase\Output.cs" />
+    <Compile Include="ProjectBase\OutputGroup.cs" />
+    <Compile Include="ProjectBase\ProjectConfig.cs" />
+    <Compile Include="ProjectBase\ProjectContainerNode.cs" />
+    <Compile Include="ProjectBase\ProjectDesignerDocumentManager.cs" />
+    <Compile Include="ProjectBase\ProjectDocumentsListener.cs" />
+    <Compile Include="ProjectBase\ProjectElement.cs" />
+    <Compile Include="ProjectBase\ProjectFactory.cs" />
+    <Compile Include="ProjectBase\ProjectFileConstants.cs" />
+    <Compile Include="ProjectBase\ProjectNode.CopyPaste.cs" />
+    <Compile Include="ProjectBase\ProjectNode.cs" />
+    <Compile Include="ProjectBase\ProjectNode.Events.cs" />
+    <Compile Include="ProjectBase\ProjectOptions.cs" />
+    <Compile Include="ProjectBase\ProjectPackage.cs" />
+    <Compile Include="ProjectBase\ProjectReferenceNode.cs" />
+    <Compile Include="ProjectBase\ProjectSecurityChecker.cs" />
+    <Compile Include="ProjectBase\PropertiesEditorLauncher.cs" />
+    <Compile Include="ProjectBase\ReferenceContainerNode.cs" />
+    <Compile Include="ProjectBase\ReferenceNode.cs" />
+    <Compile Include="ProjectBase\RegisteredProjectType.cs" />
+    <Compile Include="ProjectBase\SecurityWarningDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectBase\SecurityWarningDialog.Designer.cs" />
+    <Compile Include="ProjectBase\SelectionListener.cs" />
+    <Compile Include="ProjectBase\SettingsPage.cs" />
+    <Compile Include="ProjectBase\SingleFileGenerator.cs" />
+    <Compile Include="ProjectBase\SingleFileGeneratorFactory.cs" />
+    <Compile Include="ProjectBase\SolutionListener.cs" />
+    <Compile Include="ProjectBase\SolutionListenerForBuildDependencyUpdate.cs" />
+    <Compile Include="ProjectBase\SolutionListenerForProjectEvents.cs" />
+    <Compile Include="ProjectBase\SolutionListenerForProjectOpen.cs" />
+    <Compile Include="ProjectBase\SolutionListenerForProjectReferenceUpdate.cs" />
+    <Compile Include="ProjectBase\StructuresEnums.cs" />
+    <Compile Include="ProjectBase\SuspendFileChanges.cs" />
+    <Compile Include="ProjectBase\TokenProcessor.cs" />
+    <Compile Include="ProjectBase\Tracing.cs" />
+    <Compile Include="ProjectBase\TrackDocumentsHelper.cs" />
+    <Compile Include="ProjectBase\TypeConverters.cs" />
+    <Compile Include="ProjectBase\UpdateSolutionEventsListener.cs" />
+    <Compile Include="ProjectBase\Url.cs" />
+    <Compile Include="ProjectBase\UserProjectSecurityChecker.cs" />
+    <Compile Include="ProjectBase\Utilities.cs" />
+    <Compile Include="ProjectBase\VsCommands.cs" />
+    <Compile Include="ProjectBase\VSMDCodeDomProvider.cs" />
+    <Compile Include="ProjectBase\VSShellUtilities.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ProjectBase\DontShowAgainDialog.resx">
+      <DependentUpon>DontShowAgainDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Microsoft.VisualStudio.Package.Project.resx">
+      <Visible>true</Visible>
+      <LogicalName>Microsoft.VisualStudio.Package.Project.resources</LogicalName>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectBase\SecurityWarningDialog.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\imagelis.bmp">
+      <Visible>true</Visible>
+      <LogicalName>Resources.imagelis.bmp</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

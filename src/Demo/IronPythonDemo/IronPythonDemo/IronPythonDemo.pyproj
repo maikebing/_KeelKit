@@ -1,0 +1,60 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{774a7645-d492-470b-a2da-493568918ebe}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>IronPythonDemo</RootNamespace>
+    <AssemblyName>IronPythonDemo</AssemblyName>
+    <MainFile>Program.py</MainFile>
+    <Name>IronPythonDemo</Name>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Keel, Version=1.0.3423.33291, Culture=neutral, PublicKeyToken=null">
+      <Name>Keel</Name>
+      <AssemblyName>Keel.DLL</AssemblyName>
+      <HintPath>..\..\..\BIN\Keel.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="IronPython">
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.py">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.py" />
+    <Compile Include="SP.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CSharpControls\CSharpControls.csproj">
+      <Name>CSharpControls</Name>
+      <Project>{9f72ce9a-76bf-42ee-9158-ff312cd2dba2}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.py</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\IronPython Studio\1.0\IronPython.targets" />
+</Project>

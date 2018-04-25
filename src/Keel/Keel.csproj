@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2F903137-D910-4769-B031-D6529E19BA9B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Keel</RootNamespace>
+    <AssemblyName>Keel</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\BIN\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;USERMYSQL</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\BIN\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;USERMYSQL</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'OUT_DEBUG|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\OUT_DEBUG\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>..\BINVS2010\Keel.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSafe\AttachUserNamePasswordBehavior.cs" />
+    <Compile Include="DataSafe\KeelDataSafeBinding.cs" />
+    <Compile Include="DataSafe\Compressor.cs" />
+    <Compile Include="DataSafe\CryptEncoder.cs" />
+    <Compile Include="DataSafe\CryptEncoderFactory.cs" />
+    <Compile Include="DataSafe\CryptEncodingBindingElement.cs" />
+    <Compile Include="DataSafe\DESCryption.cs" />
+    <Compile Include="DataSafe\ServiceHostFactory.cs" />
+    <Compile Include="DB\Remote.cs" />
+    <Compile Include="GlobalAssemblyInfo.cs" />
+    <Compile Include="HttpHelper.cs" />
+    <Compile Include="IKeelHack.cs" />
+    <Compile Include="Internal\ADP.cs" />
+    <Compile Include="Exceptions.cs" />
+    <Compile Include="Internal\KeelHackHelper.cs" />
+    <Compile Include="Internal\ODB.cs" />
+    <Compile Include="Internal\NativeDBType.cs" />
+    <Compile Include="DB\MSAccess.cs" />
+    <Compile Include="Internal\MetaType.cs" />
+    <Compile Include="Json\JsonObject.cs" />
+    <Compile Include="Json\JsonObjectModel.cs" />
+    <Compile Include="Json\Json.cs" />
+    <Compile Include="Internal\SqlUdtInfo.cs" />
+    <Compile Include="DBHelper.cs" />
+    <Compile Include="DBOperator.cs" />
+    <Compile Include="DB\Common.cs" />
+    <Compile Include="KeelContext.cs" />
+    <Compile Include="ORM\Attributes.cs" />
+    <Compile Include="IDatabase.cs" />
+    <Compile Include="DB\SQLServer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Query.cs" />
+    <Compile Include="SPHelper.cs" />
+    <Compile Include="Tools\Check.cs" />
+    <Compile Include="Tools\Funs.cs" />
+    <Compile Include="Tools\Log.cs" />
+    <Compile Include="Tools\MySqlProxy\MySQLHelper.cs" />
+    <Compile Include="Tools\MySqlProxy\PHPInput.cs" />
+    <Compile Include="Tools\MySqlProxy\XmlParser.cs" />
+    <Compile Include="Tools\XMLRW.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tools\SQLyogTunnel.php" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

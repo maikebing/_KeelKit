@@ -1,0 +1,40 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SQL2KDemo.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="fasd" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">sdaf</Value>
+    </Setting>
+    <Setting Name="fads" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">adsf</Value>
+    </Setting>
+    <Setting Name="dsaf" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">sadf</Value>
+    </Setting>
+    <Setting Name="dfsa" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">sad</Value>
+    </Setting>
+    <Setting Name="Setting" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">sdaf</Value>
+    </Setting>
+    <Setting Name="Setting1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sdaf</Value>
+    </Setting>
+    <Setting Name="Setting2" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Projects\AnalysisMaps\App_Data\dcmap.mdb&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.OleDb&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Projects\AnalysisMaps\App_Data\dcmap.mdb</Value>
+    </Setting>
+    <Setting Name="ConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=192.168.1.177;Initial Catalog=Northwind;Persist Security Info=True;User ID=sa;Password=future&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=192.168.1.177;Initial Catalog=Northwind;Persist Security Info=True;User ID=sa;Password=future</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

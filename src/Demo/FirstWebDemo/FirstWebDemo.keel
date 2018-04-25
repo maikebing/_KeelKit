@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<KeelExt xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModelProjectName>FirstWebDemo.Mode</ModelProjectName>
+  <ModelProjectKind>Grove</ModelProjectKind>
+  <ModelGenerateMore>true</ModelGenerateMore>
+  <ModelAddMore>false</ModelAddMore>
+  <DataViews>View_1;</DataViews>
+  <DataSP>coop_tb_codfiles_GetAll;coop_tb_codsoftitem_GetAll;coop_tb_user_GetAll;coop_tb_codfiles_Insert;coop_tb_codfiles_GetOne;coop_tb_codfiles_Delete;coop_tb_codfiles_Update;SP_Codfiles_Insert;SP_Codfiles_Update;SP_Codfiles_DeleteByPK;SP_Codfiles_SelectAll;SP_Codfiles_SelectByPK;SP_Codfiles_QuickSearch;SP_Codsoftitem_Insert;SP_User_Insert;test1;</DataSP>
+  <DataTables>Table_1;tb_codfiles;tb_codsoftitem;</DataTables>
+  <DataTableForms>Table_1;tb_codfiles;tb_codsoftitem;</DataTableForms>
+  <DataViewForms>View_1;</DataViewForms>
+  <FormForInherit>false</FormForInherit>
+  <ModelForUI>false</ModelForUI>
+  <ModelForCPath>C:\Documents and Settings\MysticBoy\桌面\新建文件夹</ModelForCPath>
+  <DALProjectName>FirstWebDemo.DAL</DALProjectName>
+  <UIProjectName>WebApplication1</UIProjectName>
+  <UIAddForm>false</UIAddForm>
+  <UIModifyForm>false</UIModifyForm>
+  <UIQueryForm>false</UIQueryForm>
+  <UIPrinterForm>false</UIPrinterForm>
+  <ComponentProjectName>WebApplication1</ComponentProjectName>
+  <DataSourceName>MicrosoftSqlServer</DataSourceName>
+  <ProviderName>System.Data.SqlClient</ProviderName>
+  <ConnectString>Data Source=.;Initial Catalog=berrycod;Persist Security Info=True;User ID=sa;Password=future</ConnectString>
+  <AutoVersion>
+    <Enable>true</Enable>
+    <RndBuildRev>true</RndBuildRev>
+    <OneVersion>false</OneVersion>
+    <buildVerType>Counter</buildVerType>
+    <revisionVerType>Counter</revisionVerType>
+  </AutoVersion>
+  <CodeLineCounter>
+    <NoEmptyLine>true</NoEmptyLine>
+    <NoRemLine>true</NoRemLine>
+    <NoDesingerFile>true</NoDesingerFile>
+    <NoExts>.config;</NoExts>
+  </CodeLineCounter>
+</KeelExt>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<KeelExt xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModelProjectName>Model</ModelProjectName>
+  <ModelProjectKind>DotNetAndDotNet</ModelProjectKind>
+  <ModelGenerateMore>false</ModelGenerateMore>
+  <ModelAddMore>false</ModelAddMore>
+  <DataViews />
+  <DataTables>Table_1;tb_codfiles;tb_codsoftitem;</DataTables>
+  <FormForInherit>false</FormForInherit>
+  <ModelForUI>false</ModelForUI>
+  <ModelForCPath />
+  <DALProjectName>DAL</DALProjectName>
+  <UIProjectName>sdsd</UIProjectName>
+  <UIAddForm>false</UIAddForm>
+  <UIModifyForm>false</UIModifyForm>
+  <UIQueryForm>false</UIQueryForm>
+  <UIPrinterForm>false</UIPrinterForm>
+  <ComponentProjectName>Controls</ComponentProjectName>
+  <DataSourceName>MicrosoftSqlServer</DataSourceName>
+  <ProviderName>System.Data.SqlClient</ProviderName>
+  <ConnectString>Data Source=.;Initial Catalog=berrycod;Persist Security Info=True;User ID=sa;Password=future</ConnectString>
+  <AutoVersion>
+    <Enable>false</Enable>
+    <RndBuildRev>false</RndBuildRev>
+    <OneVersion>false</OneVersion>
+    <buildVerType>Counter</buildVerType>
+    <revisionVerType>Counter</revisionVerType>
+  </AutoVersion>
+  <CodeLineCounter>
+    <NoEmptyLine>true</NoEmptyLine>
+    <NoRemLine>true</NoRemLine>
+    <NoDesingerFile>false</NoDesingerFile>
+    <NoExts />
+  </CodeLineCounter>
+</KeelExt>

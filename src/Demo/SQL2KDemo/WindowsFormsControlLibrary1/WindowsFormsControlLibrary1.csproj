@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{63FB4575-35D5-44F6-9105-90131097D9F0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsControlLibrary1</RootNamespace>
+    <AssemblyName>WindowsFormsControlLibrary1</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ctl_Categories_Keel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctl_Categories_Keel.Designer.cs">
+      <DependentUpon>ctl_Categories_Keel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctl_CustomerCustomerDemo_Keel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctl_CustomerCustomerDemo_Keel.Designer.cs">
+      <DependentUpon>ctl_CustomerCustomerDemo_Keel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctl_CustomerDemographics_Keel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctl_CustomerDemographics_Keel.Designer.cs">
+      <DependentUpon>ctl_CustomerDemographics_Keel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctl_Customers_Keel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctl_Customers_Keel.Designer.cs">
+      <DependentUpon>ctl_Customers_Keel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctl_Employees_Keel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctl_Employees_Keel.Designer.cs">
+      <DependentUpon>ctl_Employees_Keel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctl_EmployeeTerritories_Keel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctl_EmployeeTerritories_Keel.Designer.cs">
+      <DependentUpon>ctl_EmployeeTerritories_Keel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctl_Order Details_Keel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctl_Order Details_Keel.Designer.cs">
+      <DependentUpon>ctl_Order Details_Keel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctl_Orders_Keel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctl_Orders_Keel.Designer.cs">
+      <DependentUpon>ctl_Orders_Keel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctl_Products_Keel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctl_Products_Keel.Designer.cs">
+      <DependentUpon>ctl_Products_Keel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctl_Region_Keel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctl_Region_Keel.Designer.cs">
+      <DependentUpon>ctl_Region_Keel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctl_Shippers_Keel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctl_Shippers_Keel.Designer.cs">
+      <DependentUpon>ctl_Shippers_Keel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctl_Suppliers_Keel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctl_Suppliers_Keel.Designer.cs">
+      <DependentUpon>ctl_Suppliers_Keel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctl_tb_codfiles_Keel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctl_tb_codfiles_Keel.Designer.cs">
+      <DependentUpon>ctl_tb_codfiles_Keel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctl_tb_codsoftitem_Keel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctl_tb_codsoftitem_Keel.Designer.cs">
+      <DependentUpon>ctl_tb_codsoftitem_Keel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctl_tb_user_Keel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctl_tb_user_Keel.Designer.cs">
+      <DependentUpon>ctl_tb_user_Keel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctl_Territories_Keel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctl_Territories_Keel.Designer.cs">
+      <DependentUpon>ctl_Territories_Keel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctl_View_1_Keel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctl_View_1_Keel.Designer.cs">
+      <DependentUpon>ctl_View_1_Keel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ctl_Categories_Keel.resx">
+      <DependentUpon>ctl_Categories_Keel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctl_CustomerCustomerDemo_Keel.resx">
+      <DependentUpon>ctl_CustomerCustomerDemo_Keel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctl_CustomerDemographics_Keel.resx">
+      <DependentUpon>ctl_CustomerDemographics_Keel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctl_Customers_Keel.resx">
+      <DependentUpon>ctl_Customers_Keel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctl_Employees_Keel.resx">
+      <DependentUpon>ctl_Employees_Keel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctl_EmployeeTerritories_Keel.resx">
+      <DependentUpon>ctl_EmployeeTerritories_Keel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctl_Order Details_Keel.resx">
+      <DependentUpon>ctl_Order Details_Keel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctl_Orders_Keel.resx">
+      <DependentUpon>ctl_Orders_Keel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctl_Products_Keel.resx">
+      <DependentUpon>ctl_Products_Keel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctl_Region_Keel.resx">
+      <DependentUpon>ctl_Region_Keel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctl_Shippers_Keel.resx">
+      <DependentUpon>ctl_Shippers_Keel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctl_Suppliers_Keel.resx">
+      <DependentUpon>ctl_Suppliers_Keel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctl_tb_codfiles_Keel.resx">
+      <DependentUpon>ctl_tb_codfiles_Keel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctl_tb_codsoftitem_Keel.resx">
+      <DependentUpon>ctl_tb_codsoftitem_Keel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctl_tb_user_Keel.resx">
+      <DependentUpon>ctl_tb_user_Keel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctl_Territories_Keel.resx">
+      <DependentUpon>ctl_Territories_Keel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctl_View_1_Keel.resx">
+      <DependentUpon>ctl_View_1_Keel.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TextFile1.html" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

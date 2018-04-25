@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{390AF08C-6990-41AA-AC2F-D6DD143C28C3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>KeelKit</AssemblyName>
+    <RootNamespace>KeelKit</RootNamespace>
+    <SccProjectName>%24/keelkit/trunk/src/KeelKit</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <SccAuxPath>https://tfs.codeplex.com/tfs/tfs08</SccAuxPath>
+    <SccProvider>{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <OutputPath>..\BIN\</OutputPath>
+    <EnableUnmanagedDebugging>true</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+    <IncrementalBuild>false</IncrementalBuild>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <OutputPath>..\BIN\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+    <IncrementalBuild>false</IncrementalBuild>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Extensibility, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="FSharp.Compiler.CodeDom, Version=1.9.6.2, Culture=neutral, PublicKeyToken=a19089b1c74d0809, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BIN\FSharp.Compiler.CodeDom.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.TextEditor, Version=3.0.1.3800, Culture=neutral, PublicKeyToken=4d61825e8dd49f1a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BIN\ICSharpCode.TextEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPythonProjectBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=426f8a22128d5105, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BIN\IronPythonProjectBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.ConnectionUI, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\Microsoft.Data.ConnectionUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.ConnectionUI.Dialog, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BIN\Microsoft.Data.ConnectionUI.Dialog.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\BIN\Microsoft.Office.Interop.Word.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="Microsoft.VisualStudio.Data">
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\Microsoft.VisualStudio.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.OLE.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC\Microsoft.VisualStudio.OLE.Interop\7.1.40304.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.OLE.Interop.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BIN\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="mysql.data, Version=5.1.2.2, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Keel.DB.MySql\v4\mysql.data.dll</HintPath>
+    </Reference>
+    <Reference Include="mysql.data.entity">
+      <HintPath>..\Keel.DB.MySql\v4\mysql.data.entity.dll</HintPath>
+    </Reference>
+    <Reference Include="mysql.visualstudio">
+      <HintPath>..\Keel.DB.MySql\v4\mysql.visualstudio.dll</HintPath>
+    </Reference>
+    <Reference Include="mysql.web">
+      <HintPath>..\Keel.DB.MySql\v4\mysql.web.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VSLangProj, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="VsWebSite.Interop, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\PublicAssemblies\VsWebSite.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Keel\GlobalAssemblyInfo.cs">
+      <Link>GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="AscxDom.cs" />
+    <Compile Include="AutoVersion\AsmVerControl.cs" />
+    <Compile Include="AutoVersion\av_ctlSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AutoVersion\av_ctlSetting.Designer.cs">
+      <DependentUpon>av_ctlSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\LayoutUtils.cs" />
+    <Compile Include="Core\MySqlDataConnectionUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Core\MySqlDataConnectionUI.Designer.cs">
+      <DependentUpon>MySqlDataConnectionUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFactory\frmDIY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFactory\frmDIY.Designer.cs">
+      <DependentUpon>frmDIY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFactory\pFormModel.cs" />
+    <Compile Include="HandEvents.cs" />
+    <Compile Include="ModelFactory\cbxCodeDomeProvider.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModelFactory\cbxCodeDomeProvider.Designer.cs">
+      <DependentUpon>cbxCodeDomeProvider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelFactory\GroveGenerator.cs" />
+    <Compile Include="ModelFactory\KeelContextGengerator.cs" />
+    <Compile Include="ModelFactory\SettingCodeDomProvider.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModelFactory\SettingCodeDomProvider.Designer.cs">
+      <DependentUpon>SettingCodeDomProvider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nunit\NunitCommand.cs" />
+    <Compile Include="Nunit\NunitOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Nunit\NunitOptions.Designer.cs">
+      <DependentUpon>NunitOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="StoredProcedureFactory\SPInfos.cs" />
+    <Compile Include="StoredProcedureFactory\SPGengerator.cs" />
+    <Compile Include="StoredProcedureFactory\StoredProcedureCommand.cs" />
+    <Compile Include="DocBuilter\DocBuilderCommand.cs" />
+    <Compile Include="FormFactory\FormFactoryCommand.cs" />
+    <Compile Include="Core\frmAboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\frmAboutBox.Designer.cs">
+      <DependentUpon>frmAboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFactory\frmFormFactory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFactory\frmFormFactory.Designer.cs">
+      <DependentUpon>frmFormFactory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StoredProcedureFactory\frmSPFactory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoredProcedureFactory\frmSPFactory.Designer.cs">
+      <DependentUpon>frmSPFactory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocBuilter\DBDocBuilder.cs" />
+    <Compile Include="DocBuilter\frmBuilder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocBuilter\frmBuilder.Designer.cs">
+      <DependentUpon>frmBuilder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelFactory\CGenerator.cs" />
+    <Compile Include="DocBuilter\CodeToHtml.cs" />
+    <Compile Include="DocBuilter\HtmlWriter.cs" />
+    <Compile Include="FormFactory\WinFormBaseGengerator.cs" />
+    <Compile Include="FormFactory\WebFormBaseGengerator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ModelFactory\BaseGengerator.cs" />
+    <Compile Include="ModelFactory\ModelGengerator.cs" />
+    <Compile Include="ModelFactory\ViewGenerator.cs" />
+    <Compile Include="ModelFactory\SQL2Class.cs" />
+    <Compile Include="Core\ShowAboutBox.cs" />
+    <Compile Include="ModelFactory\ModelFactoryCommand.cs" />
+    <Compile Include="Core\SLNConfig.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="Connect.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\BuildConnectString.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Core\BuildConnectString.Designer.cs">
+      <DependentUpon>BuildConnectString.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\cbxProjects.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Core\cbxProjects.Designer.cs">
+      <DependentUpon>cbxProjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelFactory\frmModelFactory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModelFactory\frmModelFactory.Designer.cs">
+      <DependentUpon>frmModelFactory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelFactory\frmSqlStr2Class.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModelFactory\frmSqlStr2Class.Designer.cs">
+      <DependentUpon>frmSqlStr2Class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\frmSlnConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\frmSlnConfig.Designer.cs">
+      <DependentUpon>frmSlnConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kit.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SyncDB\frmSyncDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SyncDB\frmSyncDB.Designer.cs">
+      <DependentUpon>frmSyncDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SyncDB\SyncDBCommand.cs" />
+    <Compile Include="Win7Taskbar.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AutoVersion\av_ctlSetting.resx">
+      <DependentUpon>av_ctlSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandBar.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\BuildConnectString.resx">
+      <DependentUpon>BuildConnectString.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\cbxProjects.resx">
+      <DependentUpon>cbxProjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\frmAboutBox.resx">
+      <DependentUpon>frmAboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\MySqlDataConnectionUI.resx">
+      <DependentUpon>MySqlDataConnectionUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFactory\frmDIY.resx">
+      <DependentUpon>frmDIY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelFactory\cbxCodeDomeProvider.resx">
+      <DependentUpon>cbxCodeDomeProvider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelFactory\frmModelFactory.resx">
+      <DependentUpon>frmModelFactory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\frmSlnConfig.resx">
+      <DependentUpon>frmSlnConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelFactory\SettingCodeDomProvider.resx">
+      <DependentUpon>SettingCodeDomProvider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nunit\NunitOptions.resx">
+      <DependentUpon>NunitOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Resources\Data.VisualStudio.MySqlDataConnectionUI.resx" />
+    <EmbeddedResource Include="StoredProcedureFactory\frmSPFactory.resx">
+      <DependentUpon>frmSPFactory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelFactory\frmSqlStr2Class.resx">
+      <DependentUpon>frmSqlStr2Class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFactory\frmFormFactory.resx">
+      <DependentUpon>frmFormFactory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocBuilter\frmBuilder.resx">
+      <DependentUpon>frmBuilder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SyncDB\frmSyncDB.resx">
+      <DependentUpon>frmSyncDB.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="EnvDTE">
+      <Guid>{80CC9F66-E7D8-4DDD-85B6-D9E6CD0E93E2}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="EnvDTE80">
+      <Guid>{1A31287A-4D7D-413E-8E32-3B374931BD89}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.VisualStudio.CommandBars">
+      <Guid>{1CBA492E-7263-47BB-87FE-639000619B15}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="KeelKit.AddIn">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Resources\binaryda.ico" />
+    <None Include="Resources\build.ico" />
+    <None Include="Resources\CodeProviderRouter.xml" />
+    <None Include="Resources\warning.ico" />
+    <None Include="Resources\debug.ico" />
+    <None Include="Resources\error.ico" />
+    <None Include="Resources\GraphHL.bmp" />
+    <None Include="Resources\PieChart3DHH.bmp" />
+    <None Include="Resources\rem.bmp" />
+    <None Include="Resources\run.ico" />
+    <None Include="Resources\ToolWindowBmp.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="KeelKit.Generators.SQLTableInfo.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\WebUserControl.KeelTemplate" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KeelKit.Core\KeelKit.Core.csproj">
+      <Project>{11D2F6FC-5DF6-40A1-AD2A-214E62F20072}</Project>
+      <Name>KeelKit.CoreVS2012</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Keel\Keel.csproj">
+      <Project>{2F903137-D910-4769-B031-D6529E19BA9B}</Project>
+      <Name>Keel2012</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

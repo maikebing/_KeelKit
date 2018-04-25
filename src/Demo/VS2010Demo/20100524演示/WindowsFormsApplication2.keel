@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<KeelExt xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModelProjectName>WindowsFormsApplication2</ModelProjectName>
+  <ModelProjectKind>DotNetAndDotNet</ModelProjectKind>
+  <ModelGenerateMore>false</ModelGenerateMore>
+  <ModelAddMore>false</ModelAddMore>
+  <DataViews />
+  <DataTables>sites;images;music;csp;</DataTables>
+  <DataTableForms>sites;images;music;csp;</DataTableForms>
+  <DataViewForms />
+  <FormForInherit>true</FormForInherit>
+  <ModelForUI>false</ModelForUI>
+  <StoredProcedureSettings />
+  <ModelForCPath />
+  <ModelCanSerialization>true</ModelCanSerialization>
+  <DALProjectName>WindowsFormsApplication2</DALProjectName>
+  <UIProjectName>WindowsFormsApplication2</UIProjectName>
+  <UIAddForm>false</UIAddForm>
+  <UIModifyForm>false</UIModifyForm>
+  <UIQueryForm>false</UIQueryForm>
+  <UIPrinterForm>false</UIPrinterForm>
+  <ComponentProjectName>WindowsFormsApplication2</ComponentProjectName>
+  <DataSourceName>MicrosoftSqlServer</DataSourceName>
+  <ProviderName>System.Data.SqlClient</ProviderName>
+  <ConnectString>Data Source=MYH-PC;Initial Catalog=goomle;Persist Security Info=True;User ID=sa;Password=future</ConnectString>
+  <DBDoc_DataTables>sites;images;music;csp;</DBDoc_DataTables>
+  <AutoVersion>
+    <Enable>false</Enable>
+    <ProjectBase />
+    <Kind>Default</Kind>
+    <RndBuildRev>false</RndBuildRev>
+    <OneVersion>false</OneVersion>
+    <major />
+    <minor />
+    <buildVerType>Counter</buildVerType>
+    <revisionVerType>Counter</revisionVerType>
+    <searchOption>TopDirectoryOnly</searchOption>
+  </AutoVersion>
+  <CodeProviderRouter>
+    <CSharp>
+      <AsmFullName>System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</AsmFullName>
+      <Location>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</Location>
+      <TypeName>Microsoft.CSharp.CSharpCodeProvider</TypeName>
+    </CSharp>
+    <VBDotNet>
+      <AsmFullName>KeelKit.Core.Serialization.ProviderInfo</AsmFullName>
+      <Location>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</Location>
+      <TypeName>Microsoft.VisualBasic.VBCodeProvider</TypeName>
+    </VBDotNet>
+    <IronPython>
+      <AsmFullName>KeelKit.Core.Serialization.ProviderInfo</AsmFullName>
+      <TypeName>(None)</TypeName>
+    </IronPython>
+    <FSharp>
+      <AsmFullName>KeelKit.Core.Serialization.ProviderInfo</AsmFullName>
+      <Location>FSharp.Compiler.CodeDom.dll</Location>
+      <TypeName>Microsoft.FSharp.Compiler.CodeDom.FSharpCodeProvider</TypeName>
+    </FSharp>
+    <CPP>
+      <AsmFullName>KeelKit.Core.Serialization.ProviderInfo</AsmFullName>
+      <TypeName>Microsoft.VisualC.VSCodeProvider</TypeName>
+    </CPP>
+    <OtherProvider />
+  </CodeProviderRouter>
+  <Nunit>
+    <Enable>false</Enable>
+    <NUnitRoot />
+    <NunitProject />
+  </Nunit>
+</KeelExt>

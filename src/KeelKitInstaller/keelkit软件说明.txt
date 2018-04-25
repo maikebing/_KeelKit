@@ -1,0 +1,65 @@
+说明:
+/////////////////////2012年5月25日///////////////////
+一、支持MySQL的Model生成
+Mysql 的支持需要 在 http://dev.mysql.com/downloads/connector/net/ 中下载 mysql-connector-net-6.5.4.msi 
+安装后， VS本身和KeelKit 都可以正常支持MySQL , 
+我们的实例中包含了 一个 DemoMySQL.rar 的文件， 此文件中生成了某论坛的MySqL表的Model. 
+确保您系统的 C:\Windows\Microsoft.NET\Framework\v4.0.30319\Config\machine.config 文件中
+有下面的内容。 
+
+  <system.data>
+    <DbProviderFactories>
+      <add name="MySQL Data Provider" invariant="MySql.Data.MySqlClient" description=".Net Framework Data Provider for MySQL" type="MySql.Data.MySqlClient.MySqlClientFactory, MySql.Data, Version=6.5.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d" />
+    </DbProviderFactories>
+  </system.data>
+
+
+
+二、修复Access的Model生成
+三、增加了DBContext的代码生成
+DBContext可以使得你更便捷的使用Model和DBHelper , DBContext 中为每个Model 都生成了一个DBHelper 的实例 。 
+
+四、插件模式， Mysql 开始使用插件模式， 如果你要撰写其他数据库的Keel.dll 的插件， 请模仿 Keel.DB.Mysql 
+
+
+
+/////////////////////////////////////////////////////////
+常见问题:
+	一、为什么我找不到KeelKit菜单？
+		安装后 打开VS2010 如果菜单中没有KeelKit 
+		请打开 工具--》外界程序管理器 看其中是否有KeelKit 插件
+		如果依然没有，请查看
+		"我的文档\Visual Studio 2010\Addins"
+		下有没有 KeelKit.AddIn， 如果没有， 则可能是安装错误
+		这时请复制一份   C:\Program Files\KeelKit\KeelKit.AddIn  到 我的文档\Visual Studio 2010\Addins
+		 修改 <Assembly>KeelKit.dll</Assembly>  为 <Assembly>C:\Program Files\KeelKit\KeelKit.dll</Assembly>  
+		保存后， 请再次在VS2010中打开工具-》外界程序管理器 是否有此插件， 如果依然没有，请联系开发者
+        
+
+	二、为什么KeelKit菜单是灰色的？
+		有时候KeelKit菜单会出现灰色。 无法使用
+		请在工具-》外接程序需管理器中 勾掉， 不加载，  然后确定。 再次打开 外接程序管理器， 打上勾 ， 点击确定。 
+
+
+
+	三、为什么KeelKit不自动写入链接字符串到 设置和config 文件中？
+		你需要手动点击 设置  然后在里面新建一项 后保存， 然后点开 KeelKit 的项目解决方案配置 ， 点击确定， 才会自动将连接字符串自动写入程序中。 
+
+	四、为什么部分菜单不显示，比如 配置解决方案？
+		未打开解决方案时 配置解决方案 菜单不会显示！
+		未配置解决方案 未指定Model项目时 ， 不显示 Model生成菜单 其他菜单诸如此类！
+
+数据库支持
+暂时Model 生成支持Access 和 MSSQL MYSQL  ， DBHelper 支持MySQL ACCESS MSSQL　　等。 
+
+代码生成支持
+C#  VB  F#  C++  IronPython  C(特殊方式支持)
+
+
+
+联系方式 
+QQ群 60118875
+QQ号  100860505 
+
+
+
